@@ -1,0 +1,8 @@
+main: rocks.crafter.funmc.Main
+name: Hello
+version: 1.0
+author: Crafterzman
+
+commands:
+  Hello:
+  Launch:
