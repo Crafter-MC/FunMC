@@ -12,7 +12,7 @@ public class Welcome implements CommandExecutor {
         if (label.equalsIgnoreCase("hello")) {
             if (sender instanceof Player) {
                 Player player = (Player) sender;
-                if (player.hasPermission("hello.use")) {
+                if (!player.hasPermission("hello.use")) {
                     player.sendMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "Hey welcome to the server!");
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&1H&2a&3v&4e &5f&6u&7n&8!"));
                     return true;

@@ -21,12 +21,13 @@ public class Launch implements CommandExecutor {
                 player.setVelocity(player.getLocation().getDirection().multiply(2).setY(2));
 
                 return true;
+            } else {
+
+                player.sendMessage((ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "ZOOOOOOOOOOOOOOOOOOOOOOOM!"));
+                player.setVelocity(player.getLocation().getDirection().multiply(Integer.parseInt(args[0])).setY(2));
+
+                return true;
             }
-
-            player.sendMessage((ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "ZOOOOOOOOOOOOOOOOOOOOOOOM!"));
-            player.setVelocity(player.getLocation().getDirection().multiply(Integer.parseInt(args[0])).setY(2));
-
-            return true;
         }
         return false;
     }
